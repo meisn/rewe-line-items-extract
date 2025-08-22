@@ -1,0 +1,10 @@
+[project]
+name = "rewe-line-items-extract"
+version = "0.1.0"
+description = "A small utility to extract line items from a PDF file."
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "cyclopts>=3.22.5",
+    "pymupdf>=1.26.3",
+]
