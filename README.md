@@ -3,7 +3,8 @@
 This small script tries to extract line items from an electronic receipt.
 
 ## Dependencies
-
+- [Cyclopts](https://github.com/BrianPugh/cyclopts)
+- [PyMuPDF](htps://github.com/pymupdf/PyMuPDF)
 
 ## Usage
 
