@@ -30,7 +30,7 @@ def extract_line_items(text: str) -> list[dict[str, float]]:
     Returns:
         list[dict[str, float]]: Result Dictionary with article names and their costs.
     """
-    pattern = re.compile(r"^(?P<article>[A-Z.&]+( [0-9,&A-Z.]+)*)\s+(?P<cost>\d+,\d{2}) (A|B).?$", re.MULTILINE)
+    pattern = re.compile(r"""^(?P<article>[\w!"\#$%&'()*+,\-./:;<=>?@\[\\\]^_`{|}~]+( [0-9\w!"\#$%&'()*+,\-./:;<=>?@\[\\\]^_`{|}~]+)*)\s+(?P<cost>\d+,\d{2}) (A|B)( \*)?$""", re.MULTILINE)
 
     res = []
     for line in text.splitlines():
